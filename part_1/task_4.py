@@ -1,8 +1,8 @@
 # Дан диаметр окружности d. Найти ее длину {{L = π·d, π = 3.14}}
 
 def get_circle_length(diameter):
-    pi = 3.14
-    circle_length = pi * diameter
+    PI = 3.14
+    circle_length = PI * diameter
     return(round(circle_length, 2))
 
 
