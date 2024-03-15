@@ -2,8 +2,9 @@
 
 def get_circle_length(diameter):
     pi = 3.14
-    return(pi * diameter)
+    circle_length = pi * diameter
+    return(round(circle_length, 2))
 
 
 diameter = float(input("Введите диаметр: "))
-print("Длина окружности:", round(get_circle_length(diameter), 2))
+print("Длина окружности:", get_circle_length(diameter))

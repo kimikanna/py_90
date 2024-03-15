@@ -2,12 +2,14 @@
 # и площадь его поверхности S = 6·a^2
 
 def get_volume(side):
-    return(pow(side, 3))
+    volume = pow(side, 3)
+    return(round(volume), 2)
 
 def get_surface_area(side):
-    return(6 * pow(side, 2))
+    surface_area = 6 * pow(side, 2)
+    return(round(surface_area), 2)
 
 
 side = float(input("Введите длину ребра куба: "))
-print("\nОбъём:", round(get_volume(side), 2))
-print("Площадь поверхности:", round(get_surface_area(side), 2))
+print("\nОбъём:", get_volume(side))
+print("Площадь поверхности:", get_surface_area(side))
